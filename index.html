@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
-  <title>Web to Lead Form</title>
+  <title>Flour mill income</title>
+   <script src="script.js"></script>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -84,20 +85,6 @@
     <input type="submit" name="submit" value="Submit">
   </form>
 
-  <script>
-    function otdate() {
-      let outputDate = document.querySelector('.outdate');
-      let inputDate = document.querySelector('.inputdate');
-      
-      if (inputDate && outputDate) {
-        console.log(inputDate.value);
-        let formattedDate = new Date(inputDate.value).toLocaleDateString("en-IN");
-        outputDate.value = formattedDate;
-      } else {
-        console.error("Input or output element not found");
-      }
-    }
-    
-  </script>
+ 
 </body>
 </html>

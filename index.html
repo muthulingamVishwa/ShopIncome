@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+  <title>Web to Lead Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    form {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    
+    select {
+      background-color: white;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DNS000000qAGD" method="POST" onsubmit="otdate()">
+    <input type="hidden" name="oid" value="00DNS000000qAGD">
+    <input type="hidden" name="retURL" value="http://google.com">
+    <input type="hidden" name="Date__c" class="outdate">
+    
+    <label for="00NNS0000018VkP">KG:</label>
+    <input id="00NNS0000018VkP" name="00NNS0000018VkP" size="20" type="text" required /><br>
+    
+    <label for="00NNS0000018W29">Grinding:</label>
+    <select id="00NNS0000018W29" name="00NNS0000018W29" title="Grinding" required>
+      <option value="">--None--</option>
+      <option value="Cow(மாடு)">Cow(மாடு)</option>
+      <option value="Wheat(கோதுமை)">Wheat(கோதுமை)</option>
+      <option value="Idly(இட்லி)">Idly(இட்லி)</option>
+      <option value="vadai(வடை)">vadai(வடை)</option>
+      <option value="உளுந்து">உளுந்து</option>
+    </select><br>
+    
+    <label>Date:</label>
+    <input type="date" required="true" class="inputdate"><br>
+    
+    <input type="submit" name="submit" value="Submit">
+  </form>
+
+  <script>
+    function otdate() {
+      let outputDate = document.querySelector('.outdate');
+      let inputDate = document.querySelector('.inputdate');
+      
+      if (inputDate && outputDate) {
+        console.log(inputDate.value);
+        let formattedDate = new Date(inputDate.value).toLocaleDateString("en-IN");
+        outputDate.value = formattedDate;
+      } else {
+        console.error("Input or output element not found");
+      }
+    }
+  </script>
+</body>
+</html>

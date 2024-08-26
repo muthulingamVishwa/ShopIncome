@@ -10,3 +10,8 @@ function otdate() {
     console.error("Input or output element not found");
   }
 }
+
+function capthcs(){
+document.querySelector('input[name="submit"]').classList.remove('hidden');
+
+}

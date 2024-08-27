@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-<script src="https://www.google.com/recaptcha/api.js"></script>
-  
-<script>
-  <title>Flour mill income</title>
-   <script src="script.js"></script>
-  <link rel="stylesheet" href="style.css">
-  
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flour Mill Income</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script src="script.js"></script>
 </head>
 <body>
   <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DNS000000qAGD" method="POST" onsubmit="otdate()">
@@ -17,8 +14,11 @@
     <input type="hidden" name="retURL" value="https://muthulingamvishwa.github.io/ShopIncome/">
     <input type="hidden" name="Date__c" class="outdate">
     
+    <label for="input-date">Date:</label>
+    <input type="date" id="input-date" class="inputdate" required><br>
+    
     <label for="00NNS0000018VkP">KG:</label>
-    <input id="00NNS0000018VkP" name="00NNS0000018VkP" size="20" type="text" required /><br>
+    <input id="00NNS0000018VkP" name="00NNS0000018VkP" size="20" type="text" required><br>
     
     <label for="00NNS0000018W29">Grinding:</label>
     <select id="00NNS0000018W29" name="00NNS0000018W29" title="Grinding" required>
@@ -30,14 +30,11 @@
       <option value="உளுந்து">உளுந்து</option>
     </select><br>
     
-    <label>Date:</label>
-    <input type="date" required="true" class="inputdate"><br>
+    
 
-   <div class="g-recaptcha" data-callback="capthcs" data-sitekey="6Lceyy8qAAAAABdA0bwsy0g4_iUr0-kjgD3skHR7"></div>
+    <div class="g-recaptcha" data-callback="capthcs" data-sitekey="6Lceyy8qAAAAABdA0bwsy0g4_iUr0-kjgD3skHR7"></div>
+    
     <input type="submit" name="submit" class="hidden" value="Submit">
-   
   </form>
-
- 
 </body>
 </html>

@@ -1,111 +1,73 @@
-select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-.Title {
-        font-family: 'Arial', sans-serif;
-        font-size: 48px;
-        font-weight: bold;
-        color: #333;
-        text-align: center;
-        padding: 20px;
-        background-color: #f9f9f9;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-.c2{
-    text-align: center;
-        padding: 20px;
-        background-color: #f9f9f9;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
-}
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
+/* General form styling */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
 }
 
-.container {
-    max-width: 500px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
+/* Labels */
 label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
 }
 
+/* Input fields */
 input[type="text"],
-input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
+/* Submit button */
 input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
+  width: 100%;
+  padding: 12px;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+/* Submit button hover effect */
 input[type="submit"]:hover {
-    background-color: #45a049;
+  background-color: #0056b3;
 }
 
+/* Hidden submit button */
+input.hidden {
+  display: none;
+}
+
+/* Google reCAPTCHA */
 .g-recaptcha {
-  
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 15px;
-    
-    
-}
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
+  margin-bottom: 20px;
 }
 
-.message {
-    max-width: 600px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+/* Responsive design */
+@media (max-width: 480px) {
+  form {
+    padding: 10px;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  select,
+  input[type="submit"] {
+    font-size: 14px;
+  }
 }
-
-.message p {
-    font-size: 18px;
-  color:  #0d86d6;
-    
-}
-
- .hidden {
-            display: none;
-        }
-
-.outy{
-    font-weight: bold;
-    color:  #ccc;
-    
-}
-

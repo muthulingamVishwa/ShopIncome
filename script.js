@@ -1,9 +1,9 @@
+// Function to format the date and set it to the hidden field
 function otdate() {
   let outputDate = document.querySelector('.outdate');
   let inputDate = document.querySelector('.inputdate');
   
   if (inputDate && outputDate) {
-    console.log(inputDate.value);
     let formattedDate = new Date(inputDate.value).toLocaleDateString("en-IN");
     outputDate.value = formattedDate;
   } else {
@@ -11,9 +11,7 @@ function otdate() {
   }
 }
 
-function capthcs(){
-document.querySelector('input[name="submit"]').classList.remove('hidden');
-
+// Function to display the submit button after reCAPTCHA is completed
+function capthcs() {
+  document.querySelector('input[name="submit"]').classList.remove('hidden');
 }
-
-

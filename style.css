@@ -1,62 +1,111 @@
-   body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      padding: 20px;
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.Title {
+        font-family: 'Arial', sans-serif;
+        font-size: 48px;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    form {
-      background-color: #ffffff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      max-width: 400px;
-      margin: 0 auto;
-    }
+.c2{
+    text-align: center;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
 
-    label {
-      display: block;
-      font-weight: bold;
-      margin-bottom: 8px;
-      color: #333;
-    }
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-    input[type="text"],
-    input[type="date"],
-    select {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-sizing: border-box;
-      font-size: 14px;
-    }
+label {
+    display: block;
+    margin-bottom: 5px;
+}
 
-    input[type="submit"] {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 16px;
-      width: 100%;
-    }
+input[type="text"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
 
-    input[type="submit"]:hover {
-      background-color: #45a049;
-    }
-    .g-recaptcha {
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.g-recaptcha {
   
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 15px;
-    }
-    select {
-      background-color: white;
-      font-size: 14px;
-    }
-  .hidden {
+    
+    
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.message {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.message p {
+    font-size: 18px;
+  color:  #0d86d6;
+    
+}
+
+ .hidden {
             display: none;
         }
+
+.outy{
+    font-weight: bold;
+    color:  #ccc;
+    
+}
+

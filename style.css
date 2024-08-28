@@ -4,6 +4,20 @@
   box-sizing: border-box;
   font-family: 'Arial', sans-serif;
 }
+
+.head{
+  background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+  display: flex;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  min-height: 2vh;
+  padding: 10px;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+  margin-bottom: 10px;
+  color: #FEFCFF;
+  
+}
 @media (max-width: 768px) {
     body {
         flex-direction: column;
@@ -36,6 +50,7 @@
         font-size: 1em;
     }
 }
+
 body {
   background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
   display: flex;
@@ -45,7 +60,7 @@ body {
 }
 
 form {
-  background-color: #ffffff;
+  background-color:#ffffff;
   padding: 25px;
   border-radius: 15px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
@@ -94,7 +109,7 @@ select {
 }
 
 input[type="submit"] {
-  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
   color: white;
   padding: 14px;
   border: none;

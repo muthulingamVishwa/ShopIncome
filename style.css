@@ -20,7 +20,7 @@ form {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
   max-width: 420px;
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
 label {
@@ -57,7 +57,9 @@ select {
 }
 
 .g-recaptcha {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+ display: flex;
+ justify-content: center;
 }
 
 input[type="submit"] {

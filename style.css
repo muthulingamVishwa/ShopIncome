@@ -4,7 +4,38 @@
   box-sizing: border-box;
   font-family: 'Arial', sans-serif;
 }
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 10px;
+    }
 
+    .container {
+        max-width: 100%;
+        box-shadow: none;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        margin: 15px 0;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1em;
+    }
+}
 body {
   background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
   display: flex;
